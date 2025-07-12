@@ -1,0 +1,104 @@
+.logo{
+    width: 400px; 
+    display: flex;
+    justify-items: center;
+    margin: 20px; /* espaçamento acima e abaixo */
+}
+ 
+.head {
+    align-items: center; /* alinha verticalmente a imagem e o texto */
+    display: center; /* usa flexbox para alinhar os itens */
+    justify-items: center; /* alinha os itens à esquerda */
+    text-align: center; /* centraliza o texto */
+    color:#090909;
+    background-color:#470e0e #f0e6e6; /* cor de fundo */  
+      
+}
+
+
+
+#countdown {
+      font-size: 32px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #fc0202;
+    }
+
+#program {
+
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#program h1{
+    font-size:40px;
+}
+
+.slider {
+  width: 600px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Botões de navegação */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Bolinhas indicadoras */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dots button {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots button.active {
+  background-color: #333;
+}
